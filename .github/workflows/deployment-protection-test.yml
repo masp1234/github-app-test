@@ -1,0 +1,8 @@
+on: [workflow_dispatch]
+name: deployment protection
+jobs:
+  deploy-to-dev:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - run: echo "hello dev"
